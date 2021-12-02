@@ -4,7 +4,7 @@ export function getRandomColor() {
   const letters = "123456789AB"; // <-- cutting off top end so we get lighter colors
   let color = "#";
   for (let i = 0; i < 3; i++) {
-    color += letters[Math.floor(Math.random() * 11)];
+    color += letters[Math.floor(Math.random() * letters.length)];
   }
   return color;
 }
